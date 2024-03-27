@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css">
+</head> 
+<body> 
+    <main>
+        <div class="score-container">
+          <h1 id="user-score">0</h1>
+          <h1>-</h1>
+          <h1 id="computer-score">0</h1>
+        </div>
+        <div class="choices-container">
+          <div class="choices you">
+            <p>You</p>
+            <div class="hands">
+              <img id="rock-hand" src="assets/rock-hand.png" alt="rock-hand">
+              <img id="paper-hand" src="assets/paper-hand.png" alt="paper-hand">
+              <img id="scissors-hand" src="assets/scissors-hand.png" alt="scissors-hand">
+            </div>
+            <div class="logos">
+              <button id="rock-button" class="btn" value="rock">
+                <img class="btn-img" src="assets/rock-logo.png" alt="Rock icon" width="25">
+              </button>
+              <button id="paper-button" class="btn" value="paper">
+                <img class="btn-img" src="assets/paper-logo.png" alt="Paper icon" width="25" >
+              </button>
+              <button id="scissors-button" class="btn" value="scissors">
+                <img class="btn-img" src="assets/scissors-logo.png" alt="Scissors icon" width="25">
+              </button>
+            </div>
+          </div>
+          <div class="vs">
+            <img src="assets/vs.png" alt="Versus icon" width="75">
+          </div>
+          <div class="choices computer"> 
+            <p>Comp</p>
+            <div id="computer-choice-icon"></div>
+          </div>
+        </div>
+        <div class="result-container">
+          <h2 id="game-result">Game Result</h2>
+          <button id="play-again-btn" class="btn">
+            Play Again
+          </button>
+        </div>
+        
+      </main>
+      <script src="app.js"></script>
+</body>
+</html>

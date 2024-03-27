@@ -1,0 +1,188 @@
+body {
+ background-image: url("assets/bg.png");
+  background-size: cover;
+  background-repeat:no-repeat;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+  font-size: 2rem;
+  color: white;
+}
+
+.score-container h1 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.choices-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.choices {
+  text-align: center;
+  border: 1.5px solid rgb(238, 171, 171);
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.choices p {
+  font-size: 1.5rem;
+  margin-top: -15px;
+  font-weight: bold;
+  color: white;
+}
+
+.choices.you .logos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: nowrap; 
+}
+
+.choices .btn {
+  display: block;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+.choices .btn:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#rock-hand {
+  visibility: hidden;
+}
+
+#paper-hand {
+  display: none;
+}
+
+#scissors-hand {
+  display: none;
+}
+
+.hands img {
+  width: 280px;
+  height: auto;
+}
+
+.vs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  color: gray;
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: transparent;
+}
+
+.btn-img {
+  width: 65px;
+  height: auto;
+}
+
+#computer-choice-icon {
+  display: inline-block;
+  width: 280px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+#rock-button:focus,
+#paper-button:focus,
+#scissors-button:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px #339af0;
+}
+.result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 1px; 
+}
+
+#game-result {
+  margin-bottom: 10px 0;
+  color: white;
+}
+
+#play-again-btn {
+  display: block; 
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  background-color:rgb(241, 207, 11); 
+  color:white; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+#play-again-btn:hover {
+  background-color: #1e87dc; 
+}
+.hands.computer img{
+  width: 100px;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .choices,
+  .choices .logos {
+    flex-direction: column;
+  }
+
+  .choices .logos > * {
+    margin-bottom: 20px;
+  }
+
+  .vs {
+    margin-top: 20px;
+  }
+}
